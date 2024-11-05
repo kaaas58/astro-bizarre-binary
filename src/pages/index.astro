@@ -1,16 +1,20 @@
 ---
-
+const pageTitle = "Homeside";
 ---
 
 <html lang="en">
+	<body>
+		<a href="/">Home</a>
+		<a href="/about/">About</a>
+		<a href="/blog/">Blog</a>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
-	<body>
+		<h1>{pageTitle}</h1>
 		<h1>Astro Bastro Fidel Kastro</h1>
 	</body>
 </html>
