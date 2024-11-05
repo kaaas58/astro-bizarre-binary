@@ -1,5 +1,7 @@
 ---
 import { pathHasLocale } from "astro:i18n";
+import "../styles/global.css"
+import Footer from "../components/Footer.astro";
 
 const pageTitle = " My Blog ";
 ---
@@ -16,8 +18,8 @@ const pageTitle = " My Blog ";
         <body>
             
 		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<a href="/About/">About</a>
+		<a href="/Blog/">Blog</a>
         
             <h1>{pageTitle}</h1>
             <p>this in where I will  poost about my journey leaning Astro</p>
@@ -29,6 +31,7 @@ const pageTitle = " My Blog ";
             </ul>
           
             <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+			<Footer />
           </body>
 	</body>
 </html>
