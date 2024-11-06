@@ -1,7 +1,7 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
 
 const pageTitle = "About Me";
 
@@ -33,7 +33,7 @@ const textCase = "uppercase"
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 
-        <Navigation />
+        <Header />
         <style define:vars={{skillColor, h1Color, fontWeight, textCase}}>
             h1 {
               color: var(--h1Color);
@@ -69,6 +69,7 @@ const textCase = "uppercase"
             {finished && <p>I ve finished the Tutorial</p>}
             {goal === 3 ? <p>My goal is finished in 3 Days</p> : <p>My goal is not 3 Days</p>}
             <Footer />
+            <script>import "../scripts/menu.js"</script>
           </body>
 	</body>
 </html>
